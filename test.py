@@ -117,6 +117,6 @@ for i in range(9): #1h30
     print(i)
     cookie.lets_get_cookies(5, int(200*(1.5**i)))
 
-cookie.save_game_link()
+cookie.save_game_link() 
 link = cookie.link
 
