@@ -118,5 +118,5 @@ for i in range(9): #1h30
     cookie.lets_get_cookies(5, int(200*(1.5**i)))
 
 cookie.save_game_link() 
-link = cookie.link
+link = cookie.link 
 
