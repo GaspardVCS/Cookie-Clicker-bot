@@ -7,9 +7,7 @@ class CookieBot():
     def __init__(self):
         
         #Aller sur la page de Cookie Clicker
-        self.path = "C:\Program Files (x86)\chromedriver.exe"
         self.driver = webdriver.Chrome(self.path)
-        self.driver.get("https://orteil.dashnet.org/cookieclicker/")
         time.sleep(5)
         
         #Choisir l'option de voir tous les chiffres
