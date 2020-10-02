@@ -6,10 +6,3 @@
         
         # Contiendra le lien de la partie une fois enregistrée
         self.link = ''
-        
-        
-    def click(self):
-        Cookie = self.driver.find_element_by_id("bigCookie")
-        Cookie.click()
-    
-    
