@@ -118,3 +118,4 @@ for i in range(9): #1h30
 cookie.save_game_link() 
 link = cookie.link 
 
+ 
