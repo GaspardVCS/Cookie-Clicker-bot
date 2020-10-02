@@ -4,7 +4,7 @@
         menu.find_elements_by_tag_name('div')[0].click() #On ferme la fenetre d'option
         
         
-        # Contiendra le lien de la partie une fois enregistrée
+        # Contiendra le lien de la partie une fois enregistree
         self.link = ''
         
         
