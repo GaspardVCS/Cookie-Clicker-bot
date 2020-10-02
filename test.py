@@ -27,33 +27,4 @@ class CookieBot():
         Cookie = self.driver.find_element_by_id("bigCookie")
         Cookie.click()
     
-    def buy_store(self):
-        for i in range(5, -1, -1): # On s'arrete aux banques, en tout 17 buildings différents
-            try:
-                item = self.driver.find_element_by_id("product" + str(i))
-                
-                cookie_count = self.driver.find_element_by_id('cookies').text.split(' ')[0]
-                cookie_count = int(''.join(cookie_count.split(',')))
-                
-                
-                product_price = self.driver.find_element_by_id('productPrice' + str(i)).text
-                product_price = int(''.join(product_price.split(',')))
-                
-                can_buy = cookie_count >= product_price
-                while can_buy:
-                    item.click()
-                    cookie_count = self.driver.find_element_by_id('cookies').text.split(' ')[0]
-                    cookie_count = int(''.join(cookie_count.split(',')))
-
-                    product_price = self.driver.find_element_by_id('productPrice' + str(i)).text
-                    product_price = int(''.join(product_price.split(',')))
-
-                    can_buy = cookie_count >= product_price
-
-            except:
-                pass
-            
-    def buy_upgrade(self):
-            try:
-                item = self.driver.find_element_by_id("upgrade0")
-                item.click()
+    
