@@ -21,7 +21,7 @@ class CookieBot():
         menu.find_elements_by_tag_name('div')[0].click() #On ferme la fenetre d'option
         
         
-        # Contiendra le lien de la partie une fois enregistrée
+        # Contiendra le lien de la partie une fois enregistree
         self.link = ''
         
         
@@ -30,7 +30,7 @@ class CookieBot():
         Cookie.click()
     
     def buy_store(self):
-        for i in range(5, -1, -1): # On s'arrete aux banques, en tout 17 buildings différents
+        for i in range(5, -1, -1): # On s'arrete aux banques, en tout 17 buildings differents
             try:
                 item = self.driver.find_element_by_id("product" + str(i))
                 
@@ -91,7 +91,7 @@ class CookieBot():
         a = menu.find_elements_by_tag_name('a')
         a[2].click()
         
-        #On écrit le link du bot
+        #On ecrit le link du bot
         white_window = self.driver.find_element_by_id('textareaPrompt')
         white_window.send_keys(self.link)
         white_window.send_keys(Keys.RETURN)
