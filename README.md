@@ -1,4 +1,4 @@
 # Cookie-Clicker-bot
-Création d'un bot qui joue tout seul à cookie clicker grâce à Sélinium
-
-Il cliquera en continue sur le cookie et pourra en plus acheter automatiquement des améliorations si l'on possède le nombre de cookies nécessaires. 
+I made a Cookie-clicker bot that will automatically bake cookies for me while I am away!
+You can try the game here: https://orteil.dashnet.org/cookieclicker/
+I used Selinium to automate my bot
